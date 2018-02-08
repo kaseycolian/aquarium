@@ -10,23 +10,18 @@ public class Shark {
 		this.name = name;
 		this.color = color;
 	}
-//will pull into AquaticCreature Interface
+
+	// will pull into AquaticCreature Interface
 	public String getMicrochipNumber() {
 		return microchipNumber;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public String getColor() {
 		return color;
 	}
-
-
-
-
-	
-	
-
-	
 
 }
