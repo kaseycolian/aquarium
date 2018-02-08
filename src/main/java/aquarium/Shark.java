@@ -2,7 +2,6 @@ package aquarium;
 
 public class Shark extends AquaticCreature {
 	static final int DEFAULT_SHARKS = 30;
-
 	private int sharkCount = DEFAULT_SHARKS;
 
 	public Shark(String microchipNumber, String name, String color) {
