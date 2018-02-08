@@ -1,9 +1,9 @@
 package aquarium;
 
-public class Shark {
-	private String name;
-	private String microchipNumber;
-	private String color;
+public class Shark extends AquaticCreature {
+	static final int DEFAULT_SHARKS = 30;
+
+	private int sharkCount = DEFAULT_SHARKS;
 
 	public Shark(String microchipNumber, String name, String color) {
 		this.microchipNumber = microchipNumber;
@@ -11,21 +11,13 @@ public class Shark {
 		this.color = color;
 	}
 
-	// will pull into AquaticCreature Interface
-	public String getMicrochipNumber() {
-		return microchipNumber;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public String getColor() {
-		return color;
-	}
-
 	public void killGuest(Guest guest) {
 		guest.removeGuest(5);
-		
+
 	}
+
+	public int getSharkCount() {
+		return sharkCount;
+	}
+
 }

@@ -36,5 +36,11 @@ public class SharkTest {
 		assertThat(guestCountBefore-guestCountAfter, is(5));
 		
 	}
+	@Test
+	public void shouldReturnSharkCount() {
+		int sharkCount = underTest.getSharkCount();
+		assertThat(sharkCount, is(30));
+	
+	}
 
 }
