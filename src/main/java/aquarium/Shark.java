@@ -24,4 +24,8 @@ public class Shark {
 		return color;
 	}
 
+	public void killGuest(Guest guest) {
+		guest.removeGuest(5);
+		
+	}
 }
