@@ -16,7 +16,7 @@ public class GuestTest {
 	}
 
 	@Test
-	public void shouldReturnGuessCount() {
+	public void shouldReturnGuestCount() {
 		Guest guest = new Guest();
 		guest.getGuestCount();
 		int guestCount = guest.getGuestCount();
