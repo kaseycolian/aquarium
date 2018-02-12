@@ -6,37 +6,36 @@ import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
 
-public class PenguinTest {
+public class AquaticCreaturesTest {
 
-	AquaticCreature underTest = new Penguin("1234", "Chubs", "Orange");
+	AquaticCreature underTest = new Shark("4321", "mister", "tiger");
 
 	@Test
 	public void shouldReturnName() {
 		String name = underTest.getName();
-		assertThat(name, is("Chubs"));
-	}
+		assertThat(name, is("mister"));
 
+	}
 	@Test
-	public void shouldReturnMicrochipNumber() {
+	public void shouldReturnMicroNumber() {
 		String micro = underTest.getMicrochipNumber();
-		assertThat(micro, is("1234"));
+		assertThat(micro, is("4321"));
 	}
-
+	
 	@Test
 	public void shouldReturnColor() {
 		String color = underTest.getColor();
-		assertThat(color, is("Orange"));
+		assertThat(color, is("tiger"));
 	}
-
+	
 	@Test
 	public void shouldReturnHungerLevel() {
 		int hunger = underTest.getHungerLevel();
-		assertEquals(hunger, 50);
+		assertThat(hunger, is(50));
 	}
-
 	@Test
-	public void shouldReturnBoredomLevel() {
+	public void shouldReturnBoredomlevel() {
 		int bored = underTest.getBoredomLevel();
-		assertEquals(bored, 40);
+		assertThat(bored, is(40));
 	}
 }

@@ -1,14 +1,24 @@
 package aquarium;
 
-public class AquaticCreature {
+public abstract class AquaticCreature {
+	static final int DEFAULT_HUNGERLEVEL = 50;
+	static final int DEFAULT_BOREDOMLEVEL = 40;
+	private int hungerLevel = DEFAULT_HUNGERLEVEL;
 
+	private int boredomLevel = DEFAULT_BOREDOMLEVEL;
 	protected String name;
 	protected String microchipNumber;
 	protected String color;
 
-//	public AquaticCreature() {
-//		super();
-//	}
+	public AquaticCreature(String microchipNumber, String name, String color) {
+		this.microchipNumber = microchipNumber;
+		this.name = name;
+		this.color = color;
+	}
+
+	public AquaticCreature() {
+		super();
+	}
 
 	public String getMicrochipNumber() {
 		return microchipNumber;
@@ -20,6 +30,14 @@ public class AquaticCreature {
 
 	public String getColor() {
 		return color;
+	}
+
+	public int getHungerLevel() {
+		return hungerLevel;
+	}
+
+	public int getBoredomLevel() {
+		return boredomLevel;
 	}
 
 }

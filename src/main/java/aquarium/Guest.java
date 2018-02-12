@@ -1,5 +1,5 @@
 package aquarium;
-
+//WILL MAKE THIS INTO THE AQUARIUM CLASS, DON'T NEED GUESTS AS OBJECTS, JUST DOING OVERALL GUEST 
 public class Guest {
 	static final int DEFAULT_HAPPY = 50;
 	static final int DEFAULT_GUESTCOUNT = 100;
@@ -11,8 +11,8 @@ public class Guest {
 		
 		return happyLevel;
 	}
-	public void giveHappiness(int amount){
-		happyLevel =+amount;
+	public void giveHappiness(){
+		happyLevel =+5;
 		
 	}
 	public int getGuestCount() {
@@ -20,8 +20,8 @@ public class Guest {
 		
 		
 	}
-	public void removeGuest(int numberToRemove) {
-		guestCount -= numberToRemove;
+	public void removeGuest(int amount) {
+		guestCount -= amount;
 		
 	}
 
